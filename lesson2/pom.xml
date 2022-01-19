@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lesson1</artifactId>
+    <artifactId>lesson2</artifactId>
     <dependencies>
         <!-- MyBatis 依赖 -->
         <dependency>
@@ -48,5 +48,4 @@
             </resource>
         </resources>
     </build>
-
 </project>
