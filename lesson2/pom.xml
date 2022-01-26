@@ -15,13 +15,13 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.4</version>
+            <version>3.5.9</version>
         </dependency>
         <!-- mysql 驱动 -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.18</version>
+            <version>8.0.25</version>
         </dependency>
         <!-- 日志依赖 -->
         <dependency>
