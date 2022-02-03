@@ -1,5 +1,4 @@
-import com.learn.mybatis.mapper8.UserMapper;
-import com.learn.mybatis.model.User;
+import com.learn.mybatis.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

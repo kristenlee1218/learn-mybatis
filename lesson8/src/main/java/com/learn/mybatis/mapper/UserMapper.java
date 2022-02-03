@@ -1,4 +1,4 @@
-package com.learn.mybatis.mapper8;
+package com.learn.mybatis.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

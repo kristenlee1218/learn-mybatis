@@ -1,4 +1,4 @@
-package com.learn.mybatis.mapper4;
+package com.learn.mybatis.mapper;
 
 import com.learn.mybatis.model.User;
 import org.apache.ibatis.annotations.Mapper;

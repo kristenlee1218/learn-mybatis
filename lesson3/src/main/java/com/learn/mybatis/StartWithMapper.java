@@ -1,6 +1,6 @@
 package com.learn.mybatis;
 
-import com.learn.mybatis.mapper3.UserMapper;
+import com.learn.mybatis.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

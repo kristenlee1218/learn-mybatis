@@ -1,4 +1,4 @@
-package com.learn.mybatis.mapper5;
+package com.learn.mybatis.mapper;
 
 import com.learn.mybatis.model.User;
 import com.learn.mybatis.model.UserShortCut;
