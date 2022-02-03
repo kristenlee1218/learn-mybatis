@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.mybatis.mapper.UserMapper">
+    <!-- selectUserByAgeAndScore 查找完之后的类型-->
+    <resultMap id="userMap" type="com.learn.mybatis.model.User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="age" column="age"/>
+        <result property="score" column="score"/>
+    </resultMap>
+    <select id="selectUserByAgeAndScore" parameterType="com.learn.mybatis.model.User"
+            resultType="com.learn.mybatis.model.User">
+        SELECT *
+        FROM imooc_user
+        WHERE age = #{age}
+          AND score = #{score}
+    </select>
+    <!-- 复用的 sql 代码段 -->
+    <sql id="selectUserShortcutMap">
+        SELECT username, age
+        FROM imooc_user
+    </sql>
+    <!-- 结果映射集 -->
+    <resultMap id="userShortcutMap" type="com.learn.mybatis.model.UserShortCut">
+        <result property="username" column="username"/>
+        <result property="age" column="age"/>
+    </resultMap>
+    <!-- 查询语句 -->
+    <select id="selectUserShortcutById" resultMap="userShortcutMap">
+        <include refid="selectUserShortcutMap"/>
+        WHERE id = #{id}
+    </select>
+</mapper>
