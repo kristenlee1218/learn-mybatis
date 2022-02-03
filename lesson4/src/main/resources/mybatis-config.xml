@@ -17,6 +17,6 @@
     </environments>
     <!-- mapper 对应的配置 -->
     <mappers>
-        <mapper class="com.learn.mybatis.mapper.UserMapper"/>
+        <mapper class="UserMapper"/>
     </mappers>
 </configuration>

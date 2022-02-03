@@ -2,7 +2,6 @@ package com.learn.mybatis.mapper;
 
 import com.learn.mybatis.model.User;
 import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Options;
 
 /**
  * @author : Kristen

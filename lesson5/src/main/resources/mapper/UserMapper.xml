@@ -2,16 +2,16 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.learn.mybatis.mapper.UserMapper">
+<mapper namespace="UserMapper">
     <!-- selectUserByAgeAndScore 查找完之后的类型-->
-    <resultMap id="userMap" type="com.learn.mybatis.model.User">
+    <resultMap id="userMap" type="User">
         <id property="id" column="id"/>
         <result property="username" column="username"/>
         <result property="age" column="age"/>
         <result property="score" column="score"/>
     </resultMap>
-    <select id="selectUserByAgeAndScore" parameterType="com.learn.mybatis.model.User"
-            resultType="com.learn.mybatis.model.User">
+    <select id="selectUserByAgeAndScore" parameterType="User"
+            resultType="User">
         SELECT *
         FROM imooc_user
         WHERE age = #{age}

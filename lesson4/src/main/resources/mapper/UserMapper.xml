@@ -2,15 +2,15 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.learn.mybatis.mapper.UserMapper">
+<mapper namespace="UserMapper">
     <select id="selectUserAgeById" resultType="java.lang.Integer">
         SELECT age
         FROM imooc_user
         WHERE id = #{id}
     </select>
 
-    <select id="selectUserByAgeAndScore" parameterType="com.learn.mybatis.model.User"
-            resultType="com.learn.mybatis.model.User">
+    <select id="selectUserByAgeAndScore" parameterType="User"
+            resultType="User">
         SELECT *
         FROM imooc_user
         WHERE age = #{age}
