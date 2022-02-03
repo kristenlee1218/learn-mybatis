@@ -1,4 +1,4 @@
-package com.learn.mybatis.model;
+package com.learn.mybatis8.model;
 
 /**
  * @author : Kristen

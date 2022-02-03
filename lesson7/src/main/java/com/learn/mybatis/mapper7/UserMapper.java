@@ -1,4 +1,4 @@
-package com.learn.mybatis.mapper;
+package com.learn.mybatis.mapper7;
 
 import com.learn.mybatis.model.User;
 import org.apache.ibatis.annotations.Mapper;
@@ -8,7 +8,9 @@ import org.apache.ibatis.annotations.Mapper;
  * @date : 2022/2/3
  * @description :
  */
+
 @Mapper
 public interface UserMapper {
     int insertUser(User user);
 }
+

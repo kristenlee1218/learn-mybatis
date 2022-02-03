@@ -26,7 +26,7 @@ public class StartNoXml {
         // 配置数据源
         PooledDataSource dataSource =
                 new PooledDataSource("com.mysql.cj.jdbc.Driver",
-                        "jdbc:mysql://localhost:3306/test?useSSL=false&characterEncoding=utf-8&serverTimezone=GMT%2B8", "root", "123456");
+                        "jdbc:mysql://localhost:3306/test?useSSL=false&characterEncoding=utf-8&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true", "root", "12345678");
         // 配置环境，向环境中指定环境id、事务和数据源
         Environment environment = new Environment.Builder("development")
                 .transactionFactory(jdbcTransactionFactory)

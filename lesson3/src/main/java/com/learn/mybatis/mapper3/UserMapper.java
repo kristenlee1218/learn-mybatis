@@ -1,4 +1,4 @@
-package com.learn.mybatis.mapper;
+package com.learn.mybatis.mapper3;
 
 import org.apache.ibatis.annotations.Select;
 

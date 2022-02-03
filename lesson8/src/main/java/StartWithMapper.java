@@ -1,6 +1,4 @@
-package com.learn.mybatis;
-
-import com.learn.mybatis.mapper3.UserMapper;
+import com.learn.mybatis8.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -12,23 +10,21 @@ import java.sql.SQLException;
 
 /**
  * @author : Kristen
- * @date : 2022/1/19
+ * @date : 2022/2/3
  * @description :
  */
+
 public class StartWithMapper {
     public static void main(String[] args) throws IOException, SQLException {
         String resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = sqlSessionFactory.openSession();
-        // 得到 mapper
-        UserMapper mapper = session.getMapper(UserMapper.class);
-        // 调用注解的SQL
-        String username = mapper.selectUsernameById(1);
-        System.out.println("username: " + username);
-        // 调用XML的SQL
-        int age = mapper.selectUserAgeById(1);
-        System.out.println("age: " + age);
+        UserMapper userMapper = session.getMapper(UserMapper.class);
+        int rows = userMapper.updateUserAgeById(180, 1);
+        System.out.println(rows);
+        // 一定要提交
+        session.commit();
         // 关闭会话
         session.close();
     }

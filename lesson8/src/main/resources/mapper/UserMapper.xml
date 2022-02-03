@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="UserMapper">
+<mapper namespace="com.learn.mybatis8.mapper.UserMapper">
     <update id="updateUserAgeById">
         UPDATE imooc_user
         SET age = #{age}
