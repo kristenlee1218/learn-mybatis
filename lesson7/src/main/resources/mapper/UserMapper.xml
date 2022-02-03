@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.learn.mybatis.mapper7.UserMapper">
+<mapper namespace="UserMapper">
     <insert id="insertUser" useGeneratedKeys="true" keyProperty="id"
             parameterType="com.learn.mybatis.model.User">
         INSERT INTO imooc_user(username, age, score)
