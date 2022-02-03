@@ -11,6 +11,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLException;
 
+/**
+ * @author : Kristen
+ * @date : 2022/2/3
+ * @description :
+ */
 public class StartWithMapper {
     public static void main(String[] args) throws IOException, SQLException {
         String resource = "mybatis-config.xml";
