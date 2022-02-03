@@ -21,7 +21,7 @@
         SELECT *
         FROM imooc_user
     </sql>
-    <select id="selectUserByAgeAndScore" parameterType="com.imooc.mybatis.model.User"
+    <select id="selectUserByAgeAndScore" parameterType="com.imooc.mybatis.User"
             resultMap="userMap">
         <include refid="selectUser"/>
         WHERE age = #{age} AND score = #{score}
