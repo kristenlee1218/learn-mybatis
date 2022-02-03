@@ -16,11 +16,4 @@
         WHERE age = #{age}
           AND score = #{score}
     </select>
-    <select id="selectUserByAgeAndScore" parameterType="com.learn.mybatis.model.User"
-            resultType="com.learn.mybatis.model.User">
-        SELECT *
-        FROM imooc_user
-        WHERE age = #{age}
-          AND score = #{score}
-    </select>
 </mapper>
