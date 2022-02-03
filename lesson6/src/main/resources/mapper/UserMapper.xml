@@ -7,4 +7,10 @@
         INSERT INTO imooc_user(id, username, age, score)
         VALUES (#{id}, #{username}, #{age}, #{score})
     </insert>
+
+<!--    <insert id="insertUserNoId" useGeneratedKeys="true" keyProperty="id"-->
+<!--            parameterType="com.learn.mybatis.model.User">-->
+<!--        INSERT INTO imooc_user(username, age, score)-->
+<!--        VALUES (#{username}, #{age}, #{score})-->
+<!--    </insert>-->
 </mapper>
