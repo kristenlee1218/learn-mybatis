@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Select;
  * @date : 2022/1/30
  * @description :
  */
-public abstract class UserMapper {
+public interface UserMapper {
     @Results({
             @Result(property = "id", column = "id", id = true),
             @Result(property = "username", column = "username"),
@@ -19,8 +19,8 @@ public abstract class UserMapper {
             @Result(property = "score", column = "score")
     })
     @Select("SELECT * FROM imooc_user WHERE id = #{id}")
-    public abstract User selectUserById(Integer id);
+    public User selectUserById(Integer id);
 
     @Select("SELECT * FROM imooc_user WHERE id = #{id}")
-    public abstract UserShortCut selectUserShortcutById(Integer id);
+    public UserShortCut selectUserShortcutById(Integer id);
 }

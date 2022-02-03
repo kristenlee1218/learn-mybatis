@@ -17,6 +17,15 @@
         WHERE age = #{age}
           AND score = #{score}
     </select>
+    <sql id="selectUser">
+        SELECT *
+        FROM imooc_user
+    </sql>
+    <select id="selectUserByAgeAndScore" parameterType="com.imooc.mybatis.model.User"
+            resultMap="userMap">
+        <include refid="selectUser"/>
+        WHERE age = #{age} AND score = #{score}
+    </select>
     <!-- 复用的 sql 代码段 -->
     <sql id="selectUserShortcutMap">
         SELECT username, age
